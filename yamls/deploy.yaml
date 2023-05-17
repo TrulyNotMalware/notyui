@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: notypie-ui
+  namespace: notypie-dev
+  labels:
+    app: notypie-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: notypie-ui
+  template:
+    metadata:
+      labels:
+        app: notypie-ui
+    spec:
+      containers:
+        - name: notypie-ui
+          image: harbor.registry.notypie.dev/test_project/notyui:latest
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: PORT
+              value: '80'
+          ports:
+            - name: http
+              containerPort: 3000

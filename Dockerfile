@@ -1,6 +1,7 @@
 FROM node:16.13.1 as builder
 WORKDIR /app
 COPY . .
+RUN yarn
 RUN yarn build
 
 FROM node:16.13.1

@@ -30,5 +30,4 @@ dist-ssr
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-.pnp.*
 vite.config.ts.timestamp*

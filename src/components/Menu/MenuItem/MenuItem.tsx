@@ -17,7 +17,6 @@ const MenuItem: FC<Props> = ({ children, name, selected, onClick }) => {
       onClick={() => onClick(name)}
     >
       {children}
-      {`${name[0].toUpperCase()}${name.substring(1)}`}{' '}
     </div>
   );
 };

@@ -8,13 +8,13 @@
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #ffffff;
 
     .icon {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: end;
       width: 60px;
       height: 50px;
       cursor: pointer;

@@ -26,6 +26,7 @@ const Menu = () => {
   return (
     <div className={styles.pageWrapper}>
       <div className={styles.menuWrapper}>
+        <div>Test-header</div>
         <div className={styles.mainMenu}>
           {menuList.map((value: string) => (
             <MenuItem

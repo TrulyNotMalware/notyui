@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Suspense, useState } from 'react';
-import Menu from './components/Menu/Menu';
+import Menu from '@/components/Menu/Menu';
 import './default.scss';
-import NotionPage from './components/Blog/Notion';
+import NotionPage from '@/components/Blog/Notion';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Menu />}>
-            <Route path="notion" element={<NotionPage />} />
+            <Route path="blog" element={<NotionPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -1,5 +1,5 @@
 import { useRecoilState } from 'recoil';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, Outlet } from 'react-router-dom';
 import { localMenu, prodMenu } from '@/Menu';
 import { menuName } from '@/components/atoms/menuAtom';
 import { IconBox, IconBook, IconCode } from '@/assets/icons';
@@ -40,6 +40,7 @@ const Menu = () => {
           ))}
         </div>
       </div>
+      <Outlet />
     </div>
   );
 };
